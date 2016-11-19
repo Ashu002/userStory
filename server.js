@@ -46,7 +46,7 @@ app.get("*", function(req, res){
 });*/
 
 // After Socket
-http.listen(3000, function(err) {
+http.listen(process.env.PORT || 3000, function(err) {
 	if(err){
 		console.log(err);
 	}else{
