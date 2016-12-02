@@ -46,7 +46,7 @@ module.exports = function(app, express, io){
 			password: req.body.password
 		});
 		var token = createToken(user);
-
+		
 		user.save(function(err){
 			if(err){
 				res.send(err);
